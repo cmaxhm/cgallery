@@ -1,0 +1,25 @@
+@import "variables";
+
+// General styles
+
+a {
+  color: $primaryColor;
+
+  &:hover {
+    color: lighten($primaryColor, 5);
+    text-decoration: none;
+  }
+}
+
+// Body
+
+body {
+  background: $background;
+}
+
+// Header
+
+header {
+  padding: 10px;
+  border-bottom: 1px solid $borderColor;
+}
