@@ -1,25 +1,71 @@
 @import "variables";
+@import "reset";
 
 // General styles
 
-a {
-  color: $primaryColor;
+@mixin a {
+  color: $primaryColor !important;
 
   &:hover {
-    color: lighten($primaryColor, 5);
+    color: lighten($primaryColor, 30) !important;
     text-decoration: none;
   }
+}
+
+img {
+  max-width: 100% !important;
 }
 
 // Body
 
 body {
-  background: $background;
+  background: $backgroundColor;
+  color: $textColor;
+
+  a {
+    @include a;
+  }
 }
 
 // Header
 
 header {
-  padding: 10px;
+  padding: 0 10px;
   border-bottom: 1px solid $borderColor;
+
+  .ui.secondary.menu .item.logo {
+    @include a;
+  }
+
+  .ui.menu:not(.vertical) .item > .input {
+    margin-left: 10px;
+    background: #565656;
+  }
+}
+
+// Sidebar
+
+aside {
+  border-right: 1px solid $borderColor;
+
+  #categories-menu {
+    margin: 0;
+  }
+}
+
+// Content
+
+#content {
+  .post-thumbnail {
+    max-width: 150px;
+    padding: 5px;
+  }
+}
+
+// Footer
+
+footer {
+  border-top: 1px solid $borderColor;
+  padding: 10px;
+  color: $opaqueTextColor;
 }
