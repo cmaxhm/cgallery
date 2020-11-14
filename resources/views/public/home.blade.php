@@ -5,66 +5,11 @@
 @section('content')
   <div id="content" class="fourteen wide column">
     <div class="ui stackable grid">
+      @foreach($posts as $post)
       <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
+        <a href="{{ url($post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
       </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
-      <div class="post-thumbnail column">
-        <a href="#"><img src="https://placeimg.com/200/150/people"></a>
-      </div>
+      @endforeach
     </div>
   </div>
 @endsection
