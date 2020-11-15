@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class HomeController extends Controller {
   public function show() {
     return view('public.home', [
-      'categories' => Category::all(),
-      'posts' => Post::all(),
+      'categories' => Category::take(10)->get(),
+      'posts' => Post::paginate(10)
     ]);
   }
 }

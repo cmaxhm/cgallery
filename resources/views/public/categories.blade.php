@@ -1,24 +1,22 @@
 @extends('layouts.general-layout')
 
-@section('title', env('APP_NAME').' | '.__('content.description'))
+@section('title', __('content.categories').' | '.env('APP_NAME'))
 
 @section('content')
   <div id="content" class="twelve wide tablet fourteen wide computer column">
     <div class="ui stackable grid">
       <div class="sixteen wide column">
         <div class="ui breadcrumb">
-          <a class="section">{{ __('content.home') }}</a>
+          <a class="section" href="{{ route('home') }}">{{ __('content.home') }}</a>
           <i class="right angle icon divider"></i>
           <div class="section">{{ __('content.categories') }}</div>
         </div>
       </div>
-      @foreach($posts as $post)
-        <div class="post-thumbnail column">
-          <a href="{{ url($post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
-        </div>
+      @foreach($categories as $category)
+      <div class="five wide tablet three wide computer column no-padding">
+        <a href="{{ url('category/'.$category->slug) }}">{{ $category->name }}</a>
+      </div>
       @endforeach
     </div>
-    <div class="ui divider"></div>
-    {{ $posts->links('vendor.pagination.semantic-ui') }}
   </div>
 @endsection

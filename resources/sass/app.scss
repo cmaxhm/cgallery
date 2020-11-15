@@ -56,6 +56,15 @@ aside {
 // Content
 
 #content {
+  .ui.breadcrumb .divider {
+    color: $textColor;
+  }
+
+  .ui.grid > .column.no-padding:not(.row) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .post-thumbnail {
     max-width: 150px;
     padding: 5px;

@@ -47,6 +47,15 @@ aside #categories-menu {
   margin: 0;
 }
 
+#content .ui.breadcrumb .divider {
+  color: #d6d6d6;
+}
+
+#content .ui.grid > .column.no-padding:not(.row) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 #content .post-thumbnail {
   max-width: 150px;
   padding: 5px;
