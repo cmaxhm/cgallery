@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder {
     
     User::factory()
       ->times(10)
-      ->has(Post::factory()->count(5), 'posts')
+      ->has(Post::factory()->count(10), 'posts')
       ->create();
   }
 }

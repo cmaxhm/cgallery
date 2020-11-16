@@ -5,10 +5,12 @@
       <div class="right item">
         <a class="item" href="{{! app('url') }}sign-up"><i class="pencil alternate icon"></i> {{ __('header.sign-up') }}</a>
         <a class="item" href="{{! app('url') }}login"><i class="key icon"></i> {{ __('header.login') }}</a>
-        <div class="ui icon input">
-          <input type="text" placeholder="{{ __('header.search') }}">
-          <i class="search icon"></i>
-        </div>
+        <form action="" method="get">
+          <div class="ui icon input">
+            <input type="text" placeholder="{{ __('header.search') }}">
+            <i class="search icon"></i>
+          </div>
+        </form>
       </div>
     </div>
   </div>

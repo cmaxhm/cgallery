@@ -5,9 +5,8 @@
       <a href="{{ url('/category/'.$category->slug) }}">{{ $category->name }}</a>
     </div>
     @endforeach
-    <div class="ui divider"></div>
     <div class="item">
-      <a href="{{ route('categories') }}">{{ __('sidebar.see-more') }}</a>
+      + <a href="{{ route('categories') }}">{{ __('sidebar.see-more') }}</a>
     </div>
   </ul>
 </aside>

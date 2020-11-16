@@ -29,7 +29,7 @@ class PostFactory extends Factory
       return [
         'user' => 1,
         'title' => $title,
-        'thumbnail' => 'https://picsum.photos/200',
+        'thumbnail' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 1000).'/'.$this->faker->numberBetween(100, 500).'/'.$this->faker->numberBetween(100, 500),
         'category' => Category::all()->random(1)->first()->id,
         'type' => 'video',
         'slug' => Str::slug($title, '-'),

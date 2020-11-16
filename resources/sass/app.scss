@@ -1,16 +1,8 @@
 @import "variables";
+@import "form";
 @import "reset";
 
 // General styles
-
-@mixin a {
-  color: $primaryColor !important;
-
-  &:hover {
-    color: lighten($primaryColor, 30) !important;
-    text-decoration: none;
-  }
-}
 
 img {
   max-width: 100% !important;
@@ -50,6 +42,15 @@ aside {
 
   #categories-menu {
     margin: 0;
+
+    .item {
+      display: inline;
+      color: $textColor;
+
+      i {
+        vertical-align: initial;
+      }
+    }
   }
 }
 
@@ -66,8 +67,21 @@ aside {
   }
 
   .post-thumbnail {
-    max-width: 150px;
     padding: 5px;
+
+    img {
+      max-width: 150px !important;
+      min-width: 100px;
+      max-height: 150px;
+    }
+  }
+
+  .ui.pagination.menu {
+    @include grayComponent;
+
+    .active.item {
+      background: $backgroundColor;
+    }
   }
 }
 

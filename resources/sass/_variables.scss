@@ -2,6 +2,22 @@
 
 $primaryColor: #fa6077;
 $backgroundColor: #2b2b2b;
-$borderColor: #414141;
+$borderColor: #4f4f4f;
 $textColor: #d6d6d6;
 $opaqueTextColor: #8c8c8c;
+
+// Mixins
+
+@mixin a {
+  color: $primaryColor !important;
+
+  &:hover {
+    color: lighten($primaryColor, 30) !important;
+    text-decoration: none;
+  }
+}
+
+@mixin grayComponent {
+  background: $borderColor;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
