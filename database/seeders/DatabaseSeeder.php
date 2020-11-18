@@ -20,12 +20,10 @@ class DatabaseSeeder extends Seeder {
     ]);
     
     Category::factory()
-      ->times(50)
-      ->create();
-    
-    User::factory()
-      ->times(10)
-      ->has(Post::factory()->count(10), 'posts')
+      ->times(20)
+      ->has(Post::factory()
+        ->times(200)
+        ->has(User::factory()->times(1), 'user'), 'post')
       ->create();
   }
 }

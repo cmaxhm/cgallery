@@ -27,7 +27,7 @@ class PostFactory extends Factory
       $title = $this->faker->sentence;
       
       return [
-        'user' => 1,
+        'user' => User::factory(),
         'title' => $title,
         'thumbnail' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 1000).'/'.$this->faker->numberBetween(100, 500).'/'.$this->faker->numberBetween(100, 500),
         'category' => Category::all()->random(1)->first()->id,

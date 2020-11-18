@@ -3,7 +3,7 @@
 @section('title', env('APP_NAME').' | '.__('content.description'))
 
 @section('content')
-  <div id="content" class="twelve wide tablet fourteen wide computer column">
+  <div id="content" class="twelve wide tablet eleven wide computer column">
     <div class="ui stackable grid">
       @foreach($posts as $post)
         <div class="post-thumbnail">
@@ -14,4 +14,5 @@
     <div class="ui divider"></div>
     {{ $posts->links('vendor.pagination.semantic-ui') }}
   </div>
+  @include('layouts.right-sidebar')
 @endsection

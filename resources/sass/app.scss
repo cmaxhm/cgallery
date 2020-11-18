@@ -85,6 +85,38 @@ aside {
   }
 }
 
+#right-sidebar {
+  .ui.ordered.list > .item::before {
+    position: initial;
+    color: $textColor;
+  }
+
+  .ui.vertical.list .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img.ui.avatar.image {
+      max-width: 16px;
+      height: auto;
+      margin-left: 10px;
+    }
+
+    .content {
+      color: $opaqueTextColor;
+
+      .header {
+        color: $textColor;
+        font-weight: normal;
+
+        span {
+          color: $opaqueTextColor;
+        }
+      }
+    }
+  }
+}
+
 // Footer
 
 footer {

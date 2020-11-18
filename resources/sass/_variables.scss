@@ -6,6 +6,10 @@ $borderColor: #4f4f4f;
 $textColor: #d6d6d6;
 $opaqueTextColor: #8c8c8c;
 
+.section-title {
+  margin-bottom: 20px;
+}
+
 // Mixins
 
 @mixin a {

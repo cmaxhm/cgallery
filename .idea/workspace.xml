@@ -13,17 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Home page posts list improved&#10;- Factories modified&#10;- Styling improvements">
+    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Right sidebar&#10;- Category route&#10;- Factories modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -185,7 +178,9 @@
       <workItem from="1605248773644" duration="224000" />
       <workItem from="1605285617876" duration="17700000" />
       <workItem from="1605331863423" duration="1010000" />
-      <workItem from="1605460893726" duration="17636000" />
+      <workItem from="1605460893726" duration="17765000" />
+      <workItem from="1605542943184" duration="1825000" />
+      <workItem from="1605658488327" duration="10345000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -201,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605479492899</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Home page posts list improved&#10;- Factories modified&#10;- Styling improvements">
+      <created>1605491087815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605491087815</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Right sidebar&#10;- Category route&#10;- Factories modified">
+      <created>1605669790974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605669790974</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,21 +239,27 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes" />
     <MESSAGE value="- Categories page&#10;- Styling fixes&#10;- Options table&#10;- Localization improvement&#10;- Minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Categories page&#10;- Styling fixes&#10;- Options table&#10;- Localization improvement&#10;- Minor improvements" />
+    <MESSAGE value="- Home page posts list improved&#10;- Factories modified&#10;- Styling improvements" />
+    <MESSAGE value="- Right sidebar&#10;- Category route&#10;- Factories modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Right sidebar&#10;- Category route&#10;- Factories modified" />
   </component>
   <component name="WindowStateProjectService">
     <state x="724" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605469244657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="321" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605469244657" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605290186703">
+    <state x="704" y="238" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605662794482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605290186703" />
-    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1605490998819">
+    <state x="704" y="238" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605662794482" />
+    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605664950161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605490998819" />
+    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605664950160" />
+    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1605669944468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605669944468" />
     <state x="766" y="242" key="NewPhpClassDialog" timestamp="1605467827792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,10 +272,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="389" key="VCS.EditChangelistDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605465290526" />
-    <state x="231" y="102" width="1482" height="868" key="Vcs.Push.Dialog.v2" timestamp="1605480058436">
+    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2" timestamp="1605491108065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="231" y="102" width="1482" height="868" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605480058436" />
+    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605491108065" />
+    <state x="713" y="324" width="422" height="414" key="cloudConfig.SelfSettingsDialog" timestamp="1605567998491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="324" width="422" height="414" key="cloudConfig.SelfSettingsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605567998491" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605468441557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,13 +296,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605479675495" />
-    <state width="533" height="279" key="javadoc.popup.new" timestamp="1605483486664">
+    <state width="533" height="279" key="javadoc.popup.new" timestamp="1605667076482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="533" height="279" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605483486664" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605467737951">
+    <state width="533" height="279" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605667076482" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605660459979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605467737951" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605660459979" />
   </component>
 </project>

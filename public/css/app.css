@@ -1,3 +1,7 @@
+.section-title {
+  margin-bottom: 20px;
+}
+
 .ui.icon.input input,
 .ui.icon.input textarea {
   background: #4f4f4f;
@@ -101,6 +105,36 @@ aside #categories-menu .item i {
 
 #content .ui.pagination.menu .active.item {
   background: #2b2b2b;
+}
+
+#right-sidebar .ui.ordered.list > .item::before {
+  position: initial;
+  color: #d6d6d6;
+}
+
+#right-sidebar .ui.vertical.list .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#right-sidebar .ui.vertical.list .item img.ui.avatar.image {
+  max-width: 16px;
+  height: auto;
+  margin-left: 10px;
+}
+
+#right-sidebar .ui.vertical.list .item .content {
+  color: #8c8c8c;
+}
+
+#right-sidebar .ui.vertical.list .item .content .header {
+  color: #d6d6d6;
+  font-weight: normal;
+}
+
+#right-sidebar .ui.vertical.list .item .content .header span {
+  color: #8c8c8c;
 }
 
 footer {
