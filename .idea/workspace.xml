@@ -13,9 +13,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Right sidebar&#10;- Category route&#10;- Factories modified">
+    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/es/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +186,8 @@
       <workItem from="1605331863423" duration="1010000" />
       <workItem from="1605460893726" duration="17765000" />
       <workItem from="1605542943184" duration="1825000" />
-      <workItem from="1605658488327" duration="10345000" />
+      <workItem from="1605658488327" duration="10420000" />
+      <workItem from="1605705061226" duration="7409000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -210,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605669790974</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Right sidebar&#10;- Category route&#10;- Factories modified">
+      <created>1605669968741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605669968741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,14 +266,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="238" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605662794482" />
-    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605664950161">
+    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605757266671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605664950160" />
-    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1605669944468">
+    <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605757266671" />
+    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1605669968016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605669944468" />
+    <state x="298" y="106" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605669968016" />
     <state x="766" y="242" key="NewPhpClassDialog" timestamp="1605467827792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,10 +310,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605479675495" />
-    <state width="533" height="279" key="javadoc.popup.new" timestamp="1605667076482">
+    <state width="533" height="279" key="javadoc.popup.new" timestamp="1605759323002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="533" height="279" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605667076482" />
+    <state width="533" height="279" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605759323002" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605660459979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

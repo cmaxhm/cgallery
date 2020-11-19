@@ -7,7 +7,7 @@
     <div class="ui stackable grid">
       @foreach($posts as $post)
         <div class="post-thumbnail">
-          <a href="{{ url($post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
+          <a href="{{ url('/post/'.$post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
         </div>
       @endforeach
     </div>
