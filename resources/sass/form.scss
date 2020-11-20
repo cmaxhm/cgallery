@@ -1,6 +1,6 @@
-.ui.icon.input {
-  input,
-  textarea {
+form {
+  .ui.icon.input input,
+  &.ui.form textarea {
     @include grayComponent;
     border-radius: .28571429rem;
     color: #ffffff;

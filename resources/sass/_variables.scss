@@ -1,6 +1,6 @@
 // Variables
 
-$primaryColor: #fa6077;
+$primaryColor: #ff6529;
 $backgroundColor: #2b2b2b;
 $borderColor: #4f4f4f;
 $textColor: #d6d6d6;
@@ -8,6 +8,10 @@ $opaqueTextColor: #8c8c8c;
 
 .section-title {
   margin-bottom: 20px;
+}
+
+.mt {
+  margin-top: 20px;
 }
 
 // Mixins
@@ -23,5 +27,5 @@ $opaqueTextColor: #8c8c8c;
 
 @mixin grayComponent {
   background: $borderColor;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }

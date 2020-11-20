@@ -3,7 +3,7 @@
 @section('title', __('content.categories').' | '.env('APP_NAME'))
 
 @section('content')
-  <div id="content" class="twelve wide tablet fourteen wide computer column">
+  <div id="content" class="twelve wide tablet eleven wide computer column">
     <div class="ui stackable grid">
       <div class="sixteen wide column">
         <div class="ui breadcrumb">
@@ -13,9 +13,6 @@
           <i class="right angle icon divider"></i>
           <div class="section">{{ $post->title }}</div>
         </div>
-      </div>
-      
-      <div class="sixteen wide column">
         <h1 class="section-title">{{ $post->title }}</h1>
         <div id="post-content">
           {{ $post->content }}
@@ -38,8 +35,99 @@
               {{ $post->dislikes }}
             </a>
           </div>
+          <h3 class="section-title">{{ __('content.tags') }}</h3>
+          <div class="ui tag labels">
+            <a class="ui grey label" href="{{ url('/tag/') }}">$10.00</a>
+            <a class="ui grey label" href="{{ url('/tag/') }}">$19.99</a>
+            <a class="ui grey label" href="{{ url('/tag/') }}">$24.99</a>
+            <a class="ui grey label" href="{{ url('/tag/') }}">$30.99</a>
+            <a class="ui grey label" href="{{ url('/tag/') }}">$10.25</a>
+          </div>
+          <h3 class="section-title">{{ __('content.comments') }}</h3>
+          <div class="ui comments">
+            <div class="comment">
+              <a class="avatar">
+                <img src="/images/avatar/small/steve.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Steve Jobes</a>
+                <div class="metadata">
+                  <div class="date">2 days ago</div>
+                </div>
+                <div class="text">
+                  Revolutionary!
+                </div>
+                <form class="ui reply form">
+                  <div class="field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui green submit labeled icon button">
+                    <i class="icon edit"></i> Add Reply
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="/images/avatar/small/stevie.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Stevie Feliciano</a>
+                <div class="metadata">
+                  <div class="date">2 days ago</div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="/images/avatar/small/stevie.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Stevie Feliciano</a>
+                <div class="metadata">
+                  <div class="date">2 days ago</div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="/images/avatar/small/stevie.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Stevie Feliciano</a>
+                <div class="metadata">
+                  <div class="date">2 days ago</div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="/images/avatar/small/stevie.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Stevie Feliciano</a>
+                <div class="metadata">
+                  <div class="date">2 days ago</div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  @include('layouts.right-sidebar')
 @endsection

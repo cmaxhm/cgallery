@@ -10,4 +10,6 @@ return [
   'empty-posts' => 'No hay posts',
   'likes' => 'Me gusta',
   'dislikes' => 'No me gusta',
+  'tags' => 'Etiquetas',
+  'comments' => 'Comentarios'
 ];

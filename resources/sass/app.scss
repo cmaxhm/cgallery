@@ -67,12 +67,26 @@ aside {
   }
 
   .post-thumbnail {
-    padding: 5px;
+    margin: 0 5px 0 0;
+    padding: 0;
 
     img {
-      max-width: 150px !important;
       min-width: 100px;
       max-height: 150px;
+    }
+  }
+
+  .ui.tag.labels .label::after {
+    background-color: $backgroundColor !important;
+  }
+
+  .ui.comments {
+    * {
+      color: $textColor;
+    }
+
+    .date {
+      color: $opaqueTextColor;
     }
   }
 
@@ -86,6 +100,8 @@ aside {
 }
 
 #right-sidebar {
+  border-left: 1px solid $borderColor !important;
+
   .ui.ordered.list > .item::before {
     position: initial;
     color: $textColor;
