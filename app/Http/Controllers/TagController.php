@@ -8,17 +8,15 @@ use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class PostController extends Controller {
+class TagController extends Controller {
   public function show(Request $request) {
-    $postSlug = $request->slug;
-    $post = Post::with(['category', 'user', 'tags'])->where('slug', $postSlug)->firstOrFail();
+    $tag = Tag::where('slug', $request->route()->slug)->firstOrFail();
     
-    return view('public.post', [
+    return view('public.tag', [
+      'tag' => $tag,
+      'posts' => $tag->posts()->orderBy('created_at', 'desc')->paginate(50),
       'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get(),
       'usersRanking' => User::take(30)->orderBy('points', 'desc')->get(),
-      'post' =>  $post,
-      'category' => $post->category()->first(),
-      'user' => $post->user()->first(),
     ]);
   }
 }

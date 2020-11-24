@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -20,10 +21,11 @@ class DatabaseSeeder extends Seeder {
     ]);
     
     Category::factory()
-      ->times(20)
+      ->times(5)
       ->has(Post::factory()
-        ->times(200)
-        ->has(User::factory()->times(1), 'user'), 'post')
+        ->times(10)
+        ->has(User::factory(), 'user')
+        ->has(Tag::factory()->count(rand(1, 10)), 'tags'), 'posts')
       ->create();
   }
 }

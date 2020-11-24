@@ -11,5 +11,6 @@ return [
   'likes' => 'Me gusta',
   'dislikes' => 'No me gusta',
   'tags' => 'Etiquetas',
-  'comments' => 'Comentarios'
+  'comments' => 'Comentarios',
+  'no-tags' => 'No hay tags para este post',
 ];

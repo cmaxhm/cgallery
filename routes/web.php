@@ -4,6 +4,8 @@ use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\TagsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +22,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'show'])->name('home');
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category');
 Route::get('/categories', [CategoriesController::class, 'show'])->name('categories');
+Route::get('/tag/{slug}', [TagController::class, 'show'])->name('tag');
+Route::get('/tags', [TagsController::class, 'show'])->name('tags');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');

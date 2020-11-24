@@ -37,11 +37,11 @@
           </div>
           <h3 class="section-title">{{ __('content.tags') }}</h3>
           <div class="ui tag labels">
-            <a class="ui grey label" href="{{ url('/tag/') }}">$10.00</a>
-            <a class="ui grey label" href="{{ url('/tag/') }}">$19.99</a>
-            <a class="ui grey label" href="{{ url('/tag/') }}">$24.99</a>
-            <a class="ui grey label" href="{{ url('/tag/') }}">$30.99</a>
-            <a class="ui grey label" href="{{ url('/tag/') }}">$10.25</a>
+            @forelse($post->tags()->orderBy('name', 'asc')->get() as $tag)
+              <a class="ui grey label" href="{{ url('/tag/'.$tag->slug) }}">{{ $tag->name }}</a>
+            @empty
+              <p>{{ __('no-tags') }}</p>
+            @endforelse
           </div>
           <h3 class="section-title">{{ __('content.comments') }}</h3>
           <div class="ui comments">
