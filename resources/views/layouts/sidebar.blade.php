@@ -1,5 +1,5 @@
 <aside class="four wide tablet two wide computer column">
-  <div class="ui grid">
+  <div class="ui stackable grid">
     <div class="sixteen wide column">
       <ul id="categories-menu" class="ui link list">
         @foreach($categoriesSidebar as $category)

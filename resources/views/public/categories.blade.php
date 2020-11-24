@@ -13,9 +13,9 @@
         </div>
       </div>
       @foreach($categories as $category)
-      <div class="five wide tablet three wide computer column no-padding">
-        <a href="{{ url('category/'.$category->slug) }}">{{ $category->name }}</a>
-      </div>
+        <div class="five wide tablet three wide computer column no-padding">
+          <a href="{{ url('category/'.$category->slug) }}">{{ $category->name }}</a>
+        </div>
       @endforeach
     </div>
   </div>

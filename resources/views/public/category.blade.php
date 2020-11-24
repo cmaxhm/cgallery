@@ -12,15 +12,17 @@
           <div class="section">{{ $category->name }}</div>
         </div>
       </div>
-      @forelse($posts as $post)
-      <div class="post-thumbnail">
-        <a href="{{ url('/post/'.$post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
+      <div class="ui grid">
+        @forelse($posts as $post)
+          <div class="post-thumbnail">
+            <a href="{{ url('/post/'.$post->slug) }}"><img src="{{ $post->thumbnail }}" alt="{{ $post->title }}"></a>
+          </div>
+        @empty
+          <div>
+            {{ __('content.empty-posts') }}
+          </div>
+        @endforelse
       </div>
-      @empty
-      <div>
-        {{ __('content.empty-posts') }}
-      </div>
-      @endforelse
     </div>
     <div class="ui divider"></div>
     {{ $posts->links('vendor.pagination.semantic-ui') }}

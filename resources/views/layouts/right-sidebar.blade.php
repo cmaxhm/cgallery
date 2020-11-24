@@ -1,5 +1,5 @@
 <div id="right-sidebar" class="sixteen wide tablet three wide computer column">
-  <div class="ui grid">
+  <div class="ui stackable grid">
     <div class="sixteen wide column">
       <div class="section-title">
         {{ __('content.users-ranking') }}
