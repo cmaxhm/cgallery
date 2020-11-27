@@ -12,5 +12,7 @@ return [
   'dislikes' => 'No me gusta',
   'tags' => 'Etiquetas',
   'comments' => 'Comentarios',
-  'no-tags' => 'No hay tags para este post',
+  'no-tags' => 'No hay tags',
+  'no-comments' => 'No hay comentarios',
+  'post-by' => 'Publicado por'
 ];

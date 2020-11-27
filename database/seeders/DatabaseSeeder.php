@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Comment;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Models\User;
@@ -21,11 +22,12 @@ class DatabaseSeeder extends Seeder {
     ]);
     
     Category::factory()
-      ->times(5)
+      ->count(1)
       ->has(Post::factory()
-        ->times(10)
+        ->count(1)
         ->has(User::factory(), 'user')
-        ->has(Tag::factory()->count(rand(1, 10)), 'tags'), 'posts')
+        ->has(Tag::factory()->count(rand(0, 20)), 'tags')
+        ->has(Comment::factory(), 'comments'), 'posts')
       ->create();
   }
 }

@@ -35,12 +35,17 @@
               {{ $post->dislikes }}
             </a>
           </div>
+          <div class="post-author mt">
+            {{ __('content.post-by') }}:
+            <img class="ui avatar image" src="{{ $post->user()->first()->avatar }}">
+            <a href="{{ url('user/'.$post->user()->first()->username) }}"><span>{{ $post->user()->first()->username }}</span></a>
+          </div>
           <h3 class="section-title">{{ __('content.tags') }}</h3>
           <div class="ui tag labels">
-            @forelse($post->tags()->orderBy('name', 'asc')->get() as $tag)
+            @forelse($post->tags()->orderBy('name')->get() as $tag)
               <a class="ui grey label" href="{{ url('/tag/'.$tag->slug) }}">{{ $tag->name }}</a>
             @empty
-              <p>{{ __('no-tags') }}</p>
+              <p>{{ __('content.no-tags') }}</p>
             @endforelse
           </div>
           <h3 class="section-title">{{ __('content.comments') }}</h3>
@@ -51,12 +56,6 @@
               </a>
               <div class="content">
                 <a class="author">Steve Jobes</a>
-                <div class="metadata">
-                  <div class="date">2 days ago</div>
-                </div>
-                <div class="text">
-                  Revolutionary!
-                </div>
                 <form class="ui reply form">
                   <div class="field">
                     <textarea></textarea>
@@ -68,62 +67,24 @@
               </div>
             </div>
             <div class="ui divider"></div>
+            @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
             <div class="comment">
               <a class="avatar">
-                <img src="/images/avatar/small/stevie.jpg">
+                <img src="{{ $comment->user()->first()->avatar }}">
               </a>
               <div class="content">
-                <a class="author">Stevie Feliciano</a>
+                <a class="author" href="{{ url('user/'.$post->user()->first()->username) }}">{{ $comment->user()->first()->username }}</a>
                 <div class="metadata">
-                  <div class="date">2 days ago</div>
+                  <div class="date">{{ date_format($comment->created_at, 'd/m/Y') }}</div>
                 </div>
                 <div class="text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
+                  {{ $comment->content }}
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <a class="avatar">
-                <img src="/images/avatar/small/stevie.jpg">
-              </a>
-              <div class="content">
-                <a class="author">Stevie Feliciano</a>
-                <div class="metadata">
-                  <div class="date">2 days ago</div>
-                </div>
-                <div class="text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <a class="avatar">
-                <img src="/images/avatar/small/stevie.jpg">
-              </a>
-              <div class="content">
-                <a class="author">Stevie Feliciano</a>
-                <div class="metadata">
-                  <div class="date">2 days ago</div>
-                </div>
-                <div class="text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <a class="avatar">
-                <img src="/images/avatar/small/stevie.jpg">
-              </a>
-              <div class="content">
-                <a class="author">Stevie Feliciano</a>
-                <div class="metadata">
-                  <div class="date">2 days ago</div>
-                </div>
-                <div class="text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est nam numquam quia quisquam, sit? Aspernatur consectetur cum dolores hic maiores nostrum, officiis omnis repellendus rerum sit?</p>
-                </div>
-              </div>
-            </div>
+            @empty
+            <p>{{ __('content.no-comments') }}</p>
+            @endforelse
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ class UserFactory extends Factory
       'email' => $this->faker->unique()->safeEmail,
       'birth_date' => $this->faker->date(),
       'avatar' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 1000).'/200',
-      'country' => Country::all()->random(1)->first()->id,
+      'country' => Country::all()->random()->first()->id,
       'points' => $this->faker->numberBetween(0, 50000),
       'is_admin' => false,
       'is_banned' => false,
