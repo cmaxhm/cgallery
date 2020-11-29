@@ -13,18 +13,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Tags page&#10;- Tag page&#10;- Post page improved with tags list&#10;- Post-tags migration&#10;- Tag factory">
+    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Post meta modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_13_022628_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_13_022628_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_24_013216_create_tag_post_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_24_013216_create_posts_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/es/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/general-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/general-layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/public/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +201,9 @@
       <workItem from="1606227422754" duration="11507000" />
       <workItem from="1606320234457" duration="2539000" />
       <workItem from="1606352647441" duration="3105000" />
-      <workItem from="1606397102389" duration="664000" />
+      <workItem from="1606397102389" duration="3079000" />
+      <workItem from="1606500401143" duration="675000" />
+      <workItem from="1606675383655" duration="5816000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -267,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606189558772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- Comment factory&#10;- Comment migration&#10;- Post page show comments&#10;- Tags table&#10;- Tag model&#10;- DatabaseSeeder modified&#10;- Model relationships&#10;- Minor modifications">
+      <created>1606449385195</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606449385195</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +310,8 @@
     <MESSAGE value="- Post page advancements&#10;- Minor design changes&#10;- Primary color changed to orange" />
     <MESSAGE value="- Minor changes" />
     <MESSAGE value="- Tags page&#10;- Tag page&#10;- Post page improved with tags list&#10;- Post-tags migration&#10;- Tag factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Tags page&#10;- Tag page&#10;- Post page improved with tags list&#10;- Post-tags migration&#10;- Tag factory" />
+    <MESSAGE value="- Comment factory&#10;- Comment migration&#10;- Post page show comments&#10;- Tags table&#10;- Tag model&#10;- DatabaseSeeder modified&#10;- Model relationships&#10;- Minor modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Comment factory&#10;- Comment migration&#10;- Post page show comments&#10;- Tags table&#10;- Tag model&#10;- DatabaseSeeder modified&#10;- Model relationships&#10;- Minor modifications" />
   </component>
   <component name="WindowStateProjectService">
     <state x="724" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605469244657">
@@ -317,11 +326,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="263" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606188836343" />
-    <state x="265" y="78" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1606189642325">
+    <state x="265" y="78" width="1403" height="829" key="CommitChangelistDialog2" timestamp="1606687007186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1655" y="78" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1606180220775" />
-    <state x="265" y="78" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606189642325" />
+    <state x="265" y="78" width="1403" height="829" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606687007186" />
     <state x="766" y="242" key="NewPhpClassDialog" timestamp="1605467827792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -334,11 +343,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="389" key="VCS.EditChangelistDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605465290526" />
-    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2" timestamp="1606189561805">
+    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2" timestamp="1606449391176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1700" y="99" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1606180247966" />
-    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606189561805" />
+    <state x="220" y="99" width="1482" height="868" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606449391176" />
     <state x="713" y="324" width="422" height="414" key="cloudConfig.SelfSettingsDialog" timestamp="1605567998491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,10 +368,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605479675495" />
-    <state width="533" height="255" key="javadoc.popup.new" timestamp="1606358298758">
+    <state width="533" height="255" key="javadoc.popup.new" timestamp="1606450650107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="533" height="255" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606358298758" />
+    <state width="533" height="255" key="javadoc.popup.new/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606450650107" />
     <state x="752" y="378" key="scopes" timestamp="1606265197632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -14,5 +14,6 @@ return [
   'comments' => 'Comentarios',
   'no-tags' => 'No hay tags',
   'no-comments' => 'No hay comentarios',
-  'post-by' => 'Publicado por'
+  'post-by' => 'Publicado por',
+  'report' => 'Reportar'
 ];

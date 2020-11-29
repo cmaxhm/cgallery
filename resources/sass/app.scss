@@ -57,6 +57,10 @@ aside {
 // Content
 
 #content {
+  .ui.breadcrumb {
+    margin-bottom: 20px;
+  }
+
   .ui.breadcrumb .divider {
     color: $textColor;
   }
@@ -76,8 +80,24 @@ aside {
     }
   }
 
-  .ui.tag.labels .label::after {
-    background-color: $backgroundColor !important;
+  #post-meta {
+    h1#post-title {
+      font-size: 1em;
+    }
+
+    #post-author {
+      .post-date {
+        color: $opaqueTextColor;
+      }
+    }
+  }
+
+  #post-actions {
+    border-bottom: 1px solid $borderColor !important;
+
+    .active.item {
+      border-color: $primaryColor;
+    }
   }
 
   .ui.comments {

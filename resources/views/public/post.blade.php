@@ -13,61 +13,44 @@
           <i class="right angle icon divider"></i>
           <div class="section">{{ $post->title }}</div>
         </div>
-        <h1 class="section-title">{{ $post->title }}</h1>
         <div id="post-content">
           {{ $post->content }}
         </div>
         <div class="ui divider"></div>
-        <div class="post-meta">
-          <div class="ui labeled button" tabindex="0">
-            <div class="ui green button">
-              <i class="thumbs up icon"></i> {{ __('content.likes') }}
-            </div>
-            <a class="ui basic green left pointing label">
-              {{ $post->likes }}
-            </a>
+        <div id="post-meta">
+          <h1 id="post-title">{{ $post->title }}</h1>
+          <div id="post-author">
+            {{ __('content.post-by') }} <a href="{{ url('user/'.$post->user()->first()->username) }}"><span>{{ $post->user()->first()->username }}</span></a>
+            - <span class="post-date">{{ date_format($post->created_at, 'd/m/Y') }}</span>
           </div>
-          <div class="ui labeled button" tabindex="0">
-            <div class="ui red button">
-              <i class="thumbs down icon"></i>
-            </div>
-            <a class="ui basic left pointing red label">
-              {{ $post->dislikes }}
-            </a>
-          </div>
-          <div class="post-author mt">
-            {{ __('content.post-by') }}:
-            <img class="ui avatar image" src="{{ $post->user()->first()->avatar }}">
-            <a href="{{ url('user/'.$post->user()->first()->username) }}"><span>{{ $post->user()->first()->username }}</span></a>
-          </div>
-          <h3 class="section-title">{{ __('content.tags') }}</h3>
-          <div class="ui tag labels">
-            @forelse($post->tags()->orderBy('name')->get() as $tag)
-              <a class="ui grey label" href="{{ url('/tag/'.$tag->slug) }}">{{ $tag->name }}</a>
-            @empty
-              <p>{{ __('content.no-tags') }}</p>
-            @endforelse
-          </div>
+        </div>
+        <div id="post-actions" class="ui pointing secondary menu">
+          <a class="item" href="#"><i class="thumbs up icon"></i> {{ $post->likes }}</a>
+          <a class="item" href="#"><i class="thumbs down icon"></i> {{ $post->dislikes }}</a>
+          <a class="active item" data-tab="comments"><i class="comment icon"></i> {{ __('content.comments') }}</a>
+          <a class="item" data-tab="tags"><i class="tag icon"></i> {{ __('content.tags') }}</a>
+          <a class="item" data-tab="report"><i class="flag icon"></i> {{ __('content.report') }}</a>
+        </div>
+        <div class="ui tab active comments" data-tab="comments">
           <h3 class="section-title">{{ __('content.comments') }}</h3>
-          <div class="ui comments">
-            <div class="comment">
-              <a class="avatar">
-                <img src="/images/avatar/small/steve.jpg">
-              </a>
-              <div class="content">
-                <a class="author">Steve Jobes</a>
-                <form class="ui reply form">
-                  <div class="field">
-                    <textarea></textarea>
-                  </div>
-                  <div class="ui green submit labeled icon button">
-                    <i class="icon edit"></i> Add Reply
-                  </div>
-                </form>
-              </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="/images/avatar/small/steve.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Steve Jobes</a>
+              <form class="ui reply form">
+                <div class="field">
+                  <textarea></textarea>
+                </div>
+                <div class="ui green submit labeled icon button">
+                  <i class="icon edit"></i> Add Reply
+                </div>
+              </form>
             </div>
-            <div class="ui divider"></div>
-            @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
+          </div>
+          <div class="ui divider"></div>
+          @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
             <div class="comment">
               <a class="avatar">
                 <img src="{{ $comment->user()->first()->avatar }}">
@@ -82,10 +65,17 @@
                 </div>
               </div>
             </div>
-            @empty
+          @empty
             <p>{{ __('content.no-comments') }}</p>
-            @endforelse
-          </div>
+          @endforelse
+        </div>
+        <div class="ui tab" data-tab="tags">
+          <h3 class="section-title">{{ __('content.tags') }}</h3>
+          @forelse($post->tags()->orderBy('name')->get() as $tag)
+            <a class="ui grey mini label" href="{{ url('/tag/'.$tag->slug) }}">{{ $tag->name }}</a>
+          @empty
+            <p>{{ __('content.no-tags') }}</p>
+          @endforelse
         </div>
       </div>
     </div>
