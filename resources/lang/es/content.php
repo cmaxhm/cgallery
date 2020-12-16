@@ -15,5 +15,7 @@ return [
   'no-tags' => 'No hay tags',
   'no-comments' => 'No hay comentarios',
   'post-by' => 'Publicado por',
-  'report' => 'Reportar'
+  'report' => 'Reportar',
+  'username' => 'Nombre de usuario',
+  'password' => 'Contraseña',
 ];

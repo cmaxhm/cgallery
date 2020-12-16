@@ -3,5 +3,7 @@
 return [
   'login' => 'Iniciar sesión',
   'sign-up' => 'Registrarse',
-  'search' => 'Buscar...',
+  'logout' => 'Cerrar sesión',
+  'my-profile' => 'Mi perfil',
+  'search' => 'Buscar...'
 ];

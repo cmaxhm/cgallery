@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\TagsController;
@@ -25,3 +26,6 @@ Route::get('/categories', [CategoriesController::class, 'show'])->name('categori
 Route::get('/tag/{slug}', [TagController::class, 'show'])->name('tag');
 Route::get('/tags', [TagsController::class, 'show'])->name('tags');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');
+Route::get('/login', [LoginController::class, 'show'])->name('login');
+Route::post('/login/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

@@ -33,12 +33,13 @@
         </div>
         <div class="ui tab active comments" data-tab="comments">
           <h3 class="section-title">{{ __('content.comments') }}</h3>
+          @auth
           <div class="comment">
             <a class="avatar">
-              <img src="/images/avatar/small/steve.jpg">
+              <img src="{{ auth()->user()->avatar }}">
             </a>
             <div class="content">
-              <a class="author">Steve Jobes</a>
+              <a class="author" href="{{ url('user/'.$user->username) }}">{{ auth()->user()->username }}</a>
               <form class="ui reply form">
                 <div class="field">
                   <textarea></textarea>
@@ -50,6 +51,7 @@
             </div>
           </div>
           <div class="ui divider"></div>
+          @endauth
           @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
             <div class="comment">
               <a class="avatar">
