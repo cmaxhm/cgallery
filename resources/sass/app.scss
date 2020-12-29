@@ -8,6 +8,15 @@ img {
   max-width: 100% !important;
 }
 
+.ui.celled.grid {
+  box-shadow: 0 0 0 1px $borderColor;
+}
+
+.ui.celled.grid > .column:not(.row),
+.ui.celled.grid > .row > .column {
+  box-shadow: -1px 0 0 0 $borderColor;
+}
+
 // Body
 
 body {
@@ -23,7 +32,6 @@ body {
 
 header {
   padding: 0 10px;
-  border-bottom: 1px solid $borderColor;
 
   .ui.secondary.menu .item.logo {
     @include a;
@@ -38,8 +46,6 @@ header {
 // Sidebar
 
 aside {
-  border-right: 1px solid $borderColor;
-
   #categories-menu {
     margin: 0;
 
@@ -120,8 +126,6 @@ aside {
 }
 
 #right-sidebar {
-  border-left: 1px solid $borderColor !important;
-
   .ui.ordered.list > .item::before {
     position: initial;
     color: $textColor;
@@ -156,7 +160,6 @@ aside {
 // Footer
 
 footer {
-  border-top: 1px solid $borderColor;
   padding: 10px;
   color: $opaqueTextColor;
 }

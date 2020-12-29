@@ -13,8 +13,8 @@
   </head>
   <body>
     @include('layouts.header')
-    <div id="content-wrapper" class="ui stackable grid">
-      @include('layouts.sidebar')
+    <div id="content-wrapper" class="ui celled stackable grid">
+      @include('layouts.left-sidebar')
       @yield('content')
     </div>
     @include('layouts.footer')
