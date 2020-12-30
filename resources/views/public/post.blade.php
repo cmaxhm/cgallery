@@ -34,23 +34,23 @@
         <div class="ui tab active comments" data-tab="comments">
           <h3 class="section-title">{{ __('content.comments') }}</h3>
           @auth
-          <div class="comment">
-            <a class="avatar">
-              <img src="{{ auth()->user()->avatar }}">
-            </a>
-            <div class="content">
-              <a class="author" href="{{ url('user/'.$user->username) }}">{{ auth()->user()->username }}</a>
-              <form class="ui reply form">
-                <div class="field">
-                  <textarea></textarea>
-                </div>
-                <div class="ui green submit labeled icon button">
-                  <i class="icon edit"></i> Add Reply
-                </div>
-              </form>
+            <div class="comment">
+              <a class="avatar">
+                <img src="{{ auth()->user()->avatar }}">
+              </a>
+              <div class="content">
+                <a class="author" href="{{ url('user/'.auth()->user()->username) }}">{{ auth()->user()->username }}</a>
+                <form class="ui reply form">
+                  <div class="field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui green submit labeled icon button">
+                    <i class="icon edit"></i> Add Reply
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="ui divider"></div>
+            <div class="ui divider"></div>
           @endauth
           @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
             <div class="comment">
