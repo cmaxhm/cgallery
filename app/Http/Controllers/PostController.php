@@ -14,11 +14,10 @@ class PostController extends Controller {
     $post = Post::with(['category', 'user', 'tags'])->where('slug', $postSlug)->firstOrFail();
     
     return view('public.post', [
-      'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get(),
-      'usersRanking' => User::take(30)->orderBy('points', 'desc')->get(),
       'post' =>  $post,
       'category' => $post->category()->first(),
       'user' => $post->user()->first(),
+      'sidebars' => sidebars()
     ]);
   }
 }

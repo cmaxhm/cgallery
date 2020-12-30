@@ -11,8 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller {
   public function show() {
     return view('public.login', [
-      'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get(),
-      'usersRanking' => User::take(30)->orderBy('points', 'desc')->get()
+      'sidebars' => sidebars()
     ]);
   }
   

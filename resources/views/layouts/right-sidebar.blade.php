@@ -5,7 +5,7 @@
         {{ __('content.users-ranking') }}
       </div>
       <div class="ui ordered vertical list">
-        @foreach($usersRanking as $user)
+        @foreach($sidebars->rightSidebar->usersRanking as $user)
           <div class="item">
             <img class="ui avatar image" src="{{ $user->avatar }}">
             <div class="content">

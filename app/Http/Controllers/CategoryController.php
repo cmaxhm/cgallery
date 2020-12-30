@@ -14,8 +14,7 @@ class CategoryController extends Controller {
     return view('public.category', [
       'category' => $category,
       'posts' => Post::where('category', $category->id)->orderBy('created_at', 'desc')->paginate(50),
-      'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get(),
-      'usersRanking' => User::take(30)->orderBy('points', 'desc')->get(),
+      'sidebars' => sidebars()
     ]);
   }
 }

@@ -9,7 +9,7 @@ class CategoriesController extends Controller {
   public function show() {
     return view('public.categories', [
       'categories' => Category::orderBy('name')->get(),
-      'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get()
+      'sidebars' => sidebars()
     ]);
   }
 }

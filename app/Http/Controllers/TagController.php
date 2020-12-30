@@ -15,8 +15,7 @@ class TagController extends Controller {
     return view('public.tag', [
       'tag' => $tag,
       'posts' => $tag->posts()->orderBy('created_at', 'desc')->paginate(50),
-      'categoriesSidebar' => Category::take(50)->orderBy('name', 'asc')->get(),
-      'usersRanking' => User::take(30)->orderBy('points', 'desc')->get(),
+      'sidebars' => sidebars()
     ]);
   }
 }
