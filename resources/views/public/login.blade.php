@@ -28,13 +28,15 @@
                   <i class="key icon"></i>
                 </div>
               </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" name="remember">
+                  <label>{{ __('content.remember-me') }}</label>
+                </div>
+              </div>
               @csrf
               <button class="ui button" type="submit">{{ __('header.login') }}</button>
             </form>
-
-            @auth
-              <p>Logged in</p>
-            @endauth
           </div>
         </div>
       </div>

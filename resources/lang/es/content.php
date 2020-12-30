@@ -18,4 +18,5 @@ return [
   'report' => 'Reportar',
   'username' => 'Nombre de usuario',
   'password' => 'Contraseña',
+  'remember-me' => 'Recordarme'
 ];

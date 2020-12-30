@@ -18,9 +18,10 @@ class LoginController extends Controller {
   
   public function authenticate(Request $request) {
     $credentials = $request->only('username', 'password');
+    $remember = ($request->input('remember') == null) ? false : true;
   
-    if (Auth::attempt($credentials)) {
-      return redirect()->to('login');
+    if (Auth::attempt($credentials, $remember)) {
+      return redirect()->home();
     } else {
       return redirect()->to('login');
     }
@@ -30,6 +31,6 @@ class LoginController extends Controller {
   public function logout() {
     Auth::logout();
   
-    return redirect()->to('home');
+    return redirect()->home();
   }
 }

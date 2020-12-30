@@ -4,6 +4,15 @@
 
 // General styles
 
+body {
+  background: $backgroundColor;
+  color: $textColor;
+}
+
+a {
+  @include a;
+}
+
 img {
   max-width: 100% !important;
 }
@@ -15,17 +24,6 @@ img {
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
   box-shadow: -1px 0 0 0 $borderColor;
-}
-
-// Body
-
-body {
-  background: $backgroundColor;
-  color: $textColor;
-
-  a {
-    @include a;
-  }
 }
 
 // Header
@@ -43,7 +41,7 @@ header {
   }
 }
 
-// Sidebar
+// Left sidebar
 
 aside {
   #categories-menu {
@@ -61,6 +59,10 @@ aside {
 }
 
 // Content
+
+#content-wrapper {
+  margin-top: 0;
+}
 
 #content {
   .ui.breadcrumb {
@@ -123,7 +125,13 @@ aside {
       background: $backgroundColor;
     }
   }
+
+  .field * {
+    color: $textColor;
+  }
 }
+
+// Right sidebar
 
 #right-sidebar {
   .ui.ordered.list > .item::before {

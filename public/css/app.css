@@ -33,6 +33,20 @@ form i.icon {
   margin: 0;
 }
 
+body {
+  background: #2b2b2b;
+  color: #d6d6d6;
+}
+
+a {
+  color: #ff6529 !important;
+}
+
+a:hover {
+  color: #ffd3c2 !important;
+  text-decoration: none;
+}
+
 img {
   max-width: 100% !important;
 }
@@ -44,20 +58,6 @@ img {
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
   box-shadow: -1px 0 0 0 #4f4f4f;
-}
-
-body {
-  background: #2b2b2b;
-  color: #d6d6d6;
-}
-
-body a {
-  color: #ff6529 !important;
-}
-
-body a:hover {
-  color: #ffd3c2 !important;
-  text-decoration: none;
 }
 
 header {
@@ -89,6 +89,10 @@ aside #categories-menu .item {
 
 aside #categories-menu .item i {
   vertical-align: initial;
+}
+
+#content-wrapper {
+  margin-top: 0;
 }
 
 #content .ui.breadcrumb {
@@ -145,6 +149,10 @@ aside #categories-menu .item i {
 
 #content .ui.pagination.menu .active.item {
   background: #2b2b2b;
+}
+
+#content .field * {
+  color: #d6d6d6;
 }
 
 #right-sidebar .ui.ordered.list > .item::before {
