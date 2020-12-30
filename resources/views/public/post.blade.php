@@ -58,7 +58,7 @@
                 <img src="{{ $comment->user()->first()->avatar }}">
               </a>
               <div class="content">
-                <a class="author" href="{{ url('user/'.$post->user()->first()->username) }}">{{ $comment->user()->first()->username }}</a>
+                <a class="author" href="{{ url('user/'.$comment->user()->first()->username) }}">{{ $comment->user()->first()->username }}</a>
                 <div class="metadata">
                   <div class="date">{{ date_format($comment->created_at, 'd/m/Y') }}</div>
                 </div>
