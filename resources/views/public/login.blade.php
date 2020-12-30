@@ -9,13 +9,23 @@
         <div class="ui grid">
           <div class="sixteen wide column">
             <h2>{{ __('header.login') }}</h2>
+            @if($errors->any())
+              <div class="ui negative tiny message">
+                <i class="close icon"></i>
+                <div class="header">
+                  @foreach ($errors->all() as $error)
+                    {{ __('content.login-error') }}
+                  @endforeach
+                </div>
+              </div>
+            @endif
             <form id="thin-wide-form" class="ui form" action="{{ url('login/authenticate') }}" method="post">
               <div class="field">
                 <p>
                   <label for="username">{{ __('content.username') }}</label>
                 </p>
                 <div class="ui left icon input">
-                  <input type="text" placeholder="Username" name="username">
+                  <input type="text" placeholder="{{ __('content.username') }}" name="username" value="{{ old('username') }}">
                   <i class="user icon"></i>
                 </div>
               </div>
@@ -24,7 +34,7 @@
                   <label for="password">{{ __('content.password') }}</label>
                 </p>
                 <div class="ui left icon input">
-                  <input type="password" placeholder="Password" name="password">
+                  <input type="password" placeholder="{{ __('content.password') }}" name="password">
                   <i class="key icon"></i>
                 </div>
               </div>

@@ -15,8 +15,6 @@ class PostController extends Controller {
     
     return view('public.post', [
       'post' =>  $post,
-      'category' => $post->category()->first(),
-      'user' => $post->user()->first(),
       'sidebars' => sidebars()
     ]);
   }

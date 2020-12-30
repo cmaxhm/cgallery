@@ -9,7 +9,7 @@
         <div class="ui breadcrumb">
           <a class="section" href="{{ route('home') }}">{{ __('content.home') }}</a>
           <i class="right angle icon divider"></i>
-          <div class="section"><a href="{{ url('/category/'.$category->slug) }}">{{ $category->name }}</a></div>
+          <div class="section"><a href="{{ url('/category/'.$post->category()->first()->slug) }}">{{ $post->category()->first()->name }}</a></div>
           <i class="right angle icon divider"></i>
           <div class="section">{{ $post->title }}</div>
         </div>

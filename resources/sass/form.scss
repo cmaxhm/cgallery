@@ -3,12 +3,13 @@ form {
   &.ui.form textarea {
     @include grayComponent;
     border-radius: .28571429rem;
-    color: #ffffff;
+    color: $backgroundColor;
     transition: background .3s ease;
 
     &:focus {
-      background: #6e6e6e;
+      background: #bababa;
       transition: background .3s ease;
+      color: $backgroundColor !important;
     }
   }
 

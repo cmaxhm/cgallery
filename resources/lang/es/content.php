@@ -18,5 +18,6 @@ return [
   'report' => 'Reportar',
   'username' => 'Nombre de usuario',
   'password' => 'Contraseña',
-  'remember-me' => 'Recordarme'
+  'remember-me' => 'Recordarme',
+  'login-error' => 'Error de autenticación, por favor intenta de nuevo.'
 ];

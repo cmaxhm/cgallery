@@ -11,14 +11,15 @@ form.ui.form textarea {
   background: #4f4f4f;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   border-radius: 0.28571429rem;
-  color: #ffffff;
+  color: #2b2b2b;
   transition: background 0.3s ease;
 }
 
 form .ui.icon.input input:focus,
 form.ui.form textarea:focus {
-  background: #6e6e6e;
+  background: #bababa;
   transition: background 0.3s ease;
+  color: #2b2b2b !important;
 }
 
 form i.icon {
@@ -58,6 +59,10 @@ img {
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
   box-shadow: -1px 0 0 0 #4f4f4f;
+}
+
+.ui.negative.message {
+  background-color: #dba6a6;
 }
 
 header {

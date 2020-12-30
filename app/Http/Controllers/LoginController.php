@@ -22,7 +22,7 @@ class LoginController extends Controller {
     if (Auth::attempt($credentials, $remember)) {
       return redirect()->home();
     } else {
-      return redirect()->to('login');
+      return redirect()->to('login')->withInput()->withErrors(__('content.login-error'));
     }
   }
   

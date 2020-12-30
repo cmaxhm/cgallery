@@ -13,7 +13,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="">
+    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Post tab behavior recovered&#10;- Improved post view data sent by controller&#10;- Errors displayed when login failure&#10;- Minor input styling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/es/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/public/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/post.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +214,7 @@
       <workItem from="1609259101477" duration="4116000" />
       <workItem from="1609296236448" duration="972000" />
       <workItem from="1609306911850" duration="152000" />
-      <workItem from="1609350571816" duration="3744000" />
+      <workItem from="1609350571816" duration="6661000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -312,11 +321,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609354324193</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- Code reindented&#10;- Minor fix in Post view comment section">
+      <created>1609354487594</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609354487594</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -353,6 +379,7 @@
     <MESSAGE value="- Login styles improvements&#10;- Celled layout is now Semanctic UI native&#10;- JS removed from mix-manifest.json&#10;- Left sidebar file name changed to left-sidebar.blade.php&#10;- Introduced #thin-wide-form CSS ID to limit form width" />
     <MESSAGE value="- Remember me functionality in login form&#10;- Fixed logout redirection&#10;- Minor CSS code improvement" />
     <MESSAGE value="- Expire session on close browser changed to true&#10;- Sidebars content improved with helper" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Expire session on close browser changed to true&#10;- Sidebars content improved with helper" />
+    <MESSAGE value="- Code reindented&#10;- Minor fix in Post view comment section" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Code reindented&#10;- Minor fix in Post view comment section" />
   </component>
 </project>
