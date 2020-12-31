@@ -14,7 +14,7 @@
       </div>
       @foreach($tags as $tag)
         <div class="five wide tablet three wide computer column no-padding">
-          <a href="{{ url('tag/'.$tag->slug) }}">{{ $tag->name }}</a>
+          <a href="{{ url('tag/'.$tag->slug) }}">{{ $tag->name }}</a> <span class="opaque-text">({{ count($tag->posts) }})</span>
         </div>
       @endforeach
     </div>

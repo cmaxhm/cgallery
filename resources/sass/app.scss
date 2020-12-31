@@ -17,6 +17,10 @@ img {
   max-width: 100% !important;
 }
 
+.opaque-text {
+  color: $opaqueTextColor;
+}
+
 .ui.celled.grid {
   box-shadow: 0 0 0 1px $borderColor;
 }

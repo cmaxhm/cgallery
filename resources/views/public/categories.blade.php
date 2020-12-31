@@ -14,7 +14,7 @@
       </div>
       @foreach($categories as $category)
         <div class="five wide tablet three wide computer column no-padding">
-          <a href="{{ url('category/'.$category->slug) }}">{{ $category->name }}</a>
+          <a href="{{ url('category/'.$category->slug) }}">{{ $category->name }}</a> <span class="opaque-text">({{ count($category->posts) }})</span>
         </div>
       @endforeach
     </div>

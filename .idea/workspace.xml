@@ -13,8 +13,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/public/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/post.blade.php" afterDir="false" />
+    <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="- Posts count in Categories view&#10;- Posts count in Tags view">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/left-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/left-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/tags.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/tags.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +210,8 @@
       <workItem from="1609259101477" duration="4116000" />
       <workItem from="1609296236448" duration="972000" />
       <workItem from="1609306911850" duration="152000" />
-      <workItem from="1609350571816" duration="6915000" />
+      <workItem from="1609350571816" duration="7152000" />
+      <workItem from="1609385128662" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -326,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609357348548</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- Fixed link in post comments">
+      <created>1609357576000</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609357576000</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +392,7 @@
     <MESSAGE value="- Expire session on close browser changed to true&#10;- Sidebars content improved with helper" />
     <MESSAGE value="- Code reindented&#10;- Minor fix in Post view comment section" />
     <MESSAGE value="- Post tab behavior recovered&#10;- Improved post view data sent by controller&#10;- Errors displayed when login failure&#10;- Minor input styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Post tab behavior recovered&#10;- Improved post view data sent by controller&#10;- Errors displayed when login failure&#10;- Minor input styling" />
+    <MESSAGE value="- Fixed link in post comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed link in post comments" />
   </component>
 </project>

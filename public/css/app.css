@@ -52,6 +52,10 @@ img {
   max-width: 100% !important;
 }
 
+.opaque-text {
+  color: #8c8c8c;
+}
+
 .ui.celled.grid {
   box-shadow: 0 0 0 1px #4f4f4f;
 }

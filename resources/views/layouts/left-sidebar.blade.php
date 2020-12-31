@@ -4,7 +4,7 @@
       <ul id="categories-menu" class="ui link list">
         @foreach($sidebars->leftSidebar->categories as $category)
           <div class="item">
-            <a href="{{ url('/category/'.$category->slug) }}">{{ $category->name }}</a>
+            <a href="{{ url('/category/'.$category->slug) }}">{{ $category->name }}</a> <span class="opaque-text">({{ count($category->posts) }})</span>
           </div>
         @endforeach
         <div class="item">
