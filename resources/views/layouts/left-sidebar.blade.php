@@ -10,6 +10,9 @@
         <div class="item">
           + <a href="{{ route('categories') }}">{{ __('content.see-more') }}</a>
         </div>
+        <div class="item">
+          <i class="tag small icon"></i> <a href="{{ route('tags') }}">{{ __('content.tags') }}</a>
+        </div>
       </ul>
     </div>
   </div>

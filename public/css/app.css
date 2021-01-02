@@ -164,6 +164,10 @@ aside #categories-menu .item i {
   color: #d6d6d6;
 }
 
+#right-sidebar .most-voted-posts.ui.ordered.list > .item::before {
+  position: absolute;
+}
+
 #right-sidebar .ui.ordered.list > .item::before {
   position: initial;
   color: #d6d6d6;

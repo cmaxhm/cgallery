@@ -19,5 +19,7 @@ return [
   'username' => 'Nombre de usuario',
   'password' => 'Contraseña',
   'remember-me' => 'Recordarme',
-  'login-error' => 'Error de autenticación, por favor intenta de nuevo.'
+  'login-error' => 'Error de autenticación, por favor intenta de nuevo.',
+  'donation-message' => 'Si quieres aportar a mantener esta web, puedes hacerlo aquí:',
+  'most-voted-posts' => 'Posts más votados'
 ];

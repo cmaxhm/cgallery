@@ -142,6 +142,10 @@ aside {
 // Right sidebar
 
 #right-sidebar {
+  .most-voted-posts.ui.ordered.list > .item::before {
+    position: absolute;
+  }
+
   .ui.ordered.list > .item::before {
     position: initial;
     color: $textColor;
