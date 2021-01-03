@@ -27,9 +27,9 @@ class PostFactory extends Factory
       $title = $this->faker->sentence;
       
       return [
-        'user' => User::factory(),
+        'user' => User::all()->random(1)->first()->id,
         'title' => $title,
-        'thumbnail' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 1000).'/'.$this->faker->numberBetween(100, 500).'/'.$this->faker->numberBetween(100, 500),
+        'thumbnail' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 500).'/'.$this->faker->numberBetween(100, 500).'/'.$this->faker->numberBetween(100, 500),
         'category' => Category::all()->random(1)->first()->id,
         'type' => 'video',
         'slug' => Str::slug($title, '-'),

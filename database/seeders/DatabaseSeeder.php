@@ -21,13 +21,32 @@ class DatabaseSeeder extends Seeder {
       CountrySeeder::class
     ]);
     
-    Category::factory()
-      ->count(1)
-      ->has(Post::factory()
-        ->count(1)
-        ->has(User::factory(), 'user')
-        ->has(Tag::factory()->count(rand(0, 20)), 'tags')
-        ->has(Comment::factory(), 'comments'), 'posts')
+//    Category::factory()
+//      ->count(20)
+//      ->has(Post::factory()
+//        ->count(rand(0, 15))
+//        ->has(User::factory(), 'user')
+//        ->has(Tag::factory()->count(rand(0, 20)), 'tags')
+//        ->has(Comment::factory()->count(rand(0, 50)), 'comments'), 'posts')
+//      ->create();
+    
+    Category::factory()->count(5)->create();
+    Tag::factory()->count(5)->create();
+    $users = User::factory()->count(5)->create();
+    
+    foreach ($users as $user) {
+      $user->posts()->saveMany(Post::factory()->count(rand(1, 5))->make());
+    }
+  
+    Post::factory()
+      ->count(30)
+      ->has(Comment::factory()->count(rand(0, 15)))
       ->create();
+    
+    $posts = Post::all();
+    
+    foreach ($posts as $post) {
+      $post->tags()->saveMany(Tag::all()->random(rand(0, 5)));
+    }
   }
 }

@@ -22,7 +22,7 @@ class CommentFactory extends Factory {
    */
   public function definition() {
     return [
-      'user' => User::factory(),
+      'user' => User::all()->random(1)->first()->id,
       'post' => Post::factory(),
       'content' => $this->faker->paragraph,
       'created_at' => now(),

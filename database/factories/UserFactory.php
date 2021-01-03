@@ -34,11 +34,13 @@ class UserFactory extends Factory
    */
   public function definition()
   {
+    $username = $this->faker->unique()->userName;
+    
     return [
       'name' => $this->faker->firstName,
       'last_name' => $this->faker->lastName,
-      'username' => $this->faker->unique()->userName,
-      'email' => $this->faker->unique()->safeEmail,
+      'username' => $username,
+      'email' => $username.'@mail.com',
       'birth_date' => $this->faker->date(),
       'avatar' => 'https://picsum.photos/id/'.$this->faker->numberBetween(0, 1000).'/200',
       'country' => Country::all()->random()->first()->id,
