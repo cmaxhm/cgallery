@@ -9,6 +9,8 @@
         <div class="ui breadcrumb">
           <a class="section" href="{{ route('home') }}">{{ __('content.home') }}</a>
           <i class="right angle icon divider"></i>
+          <a class="section" href="{{ route('categories') }}">{{ __('content.categories') }}</a>
+          <i class="right angle icon divider"></i>
           <div class="section">{{ $category->name }}</div>
         </div>
       </div>

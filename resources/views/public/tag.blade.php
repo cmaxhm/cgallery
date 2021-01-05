@@ -8,6 +8,8 @@
       <div class="sixteen wide column">
         <div class="ui breadcrumb">
           <a class="section" href="{{ route('home') }}">{{ __('content.home') }}</a>
+        <i class="right angle icon divider"></i>
+        <a class="section" href="{{ route('tags') }}">{{ __('content.tags') }}</a>
           <i class="right angle icon divider"></i>
           <div class="section">{{ $tag->name }}</div>
         </div>
