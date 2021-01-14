@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\TagsController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,4 @@ Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');
 Route::get('/login', [LoginController::class, 'show'])->name('login');
 Route::post('/login/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/user/{username}/posts', [UserController::class, 'posts']);

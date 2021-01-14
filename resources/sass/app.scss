@@ -21,6 +21,10 @@ img {
   color: $opaqueTextColor;
 }
 
+.ui.header {
+  color: $textColor;
+}
+
 .ui.celled.grid {
   box-shadow: 0 0 0 1px $borderColor;
 }

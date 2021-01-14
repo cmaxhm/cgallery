@@ -56,6 +56,10 @@ img {
   color: #8c8c8c;
 }
 
+.ui.header {
+  color: #d6d6d6;
+}
+
 .ui.celled.grid {
   box-shadow: 0 0 0 1px #4f4f4f;
 }
