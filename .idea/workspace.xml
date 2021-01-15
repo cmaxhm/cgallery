@@ -15,9 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e95d26f0-dcd6-4cd8-8c05-e7e330e7e6b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/es/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +218,9 @@
       <workItem from="1609799678617" duration="1593000" />
       <workItem from="1609953756963" duration="638000" />
       <workItem from="1610589496728" duration="101000" />
-      <workItem from="1610589621579" duration="1769000" />
+      <workItem from="1610589621579" duration="1896000" />
+      <workItem from="1610657049074" duration="63000" />
+      <workItem from="1610684145176" duration="2426000" />
     </task>
     <task id="LOCAL-00001" summary="- Laravel upgraded to v8&#10;- Migrations updated&#10;- Model relationships&#10;- Home page base data display&#10;- Minor changes">
       <created>1605332769011</created>
@@ -382,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609807218497</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="- Posts by user">
+      <created>1610591489198</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610591489198</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,6 +449,7 @@
     <MESSAGE value="- Tags link in left sidebar&#10;- Most voted posts in right sidebar" />
     <MESSAGE value="- Database seeder modified" />
     <MESSAGE value="- Removed commented code in DatabaseSeeder.php&#10;- Breadcumbs" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Removed commented code in DatabaseSeeder.php&#10;- Breadcumbs" />
+    <MESSAGE value="- Posts by user" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Posts by user" />
   </component>
 </project>

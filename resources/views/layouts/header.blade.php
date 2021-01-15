@@ -11,9 +11,9 @@
           <a class="item" href="{{ url('my-profile') }}"><i class="user icon"></i> {{ auth()->user()->username }}</a>
           <a class="item" href="{{ url('logout') }}"><i class="sign in alternate icon"></i> {{ __('header.logout') }}</a>
         @endauth
-        <form action="" method="get">
+        <form action="{{ url('/search') }}" method="get">
           <div class="ui icon input">
-            <input type="text" placeholder="{{ __('header.search') }}">
+            <input type="text" placeholder="{{ __('header.search') }}" name="q">
             <i class="search icon"></i>
           </div>
         </form>
