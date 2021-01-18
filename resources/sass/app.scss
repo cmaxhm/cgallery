@@ -101,32 +101,39 @@ aside {
   }
 
   #post-meta {
-    h1#post-title {
-      font-size: 1em;
-    }
-
     #post-author {
+      margin-bottom: 20px;
+
       .post-date {
         color: $opaqueTextColor;
       }
-    }
-  }
 
-  #post-actions {
-    border-bottom: 1px solid $borderColor !important;
-
-    .active.item {
-      border-color: $primaryColor;
-    }
-  }
-
-  .ui.comments {
-    * {
-      color: $textColor;
+      a:hover {
+        color: $backgroundColor !important;
+      }
     }
 
-    .date {
-      color: $opaqueTextColor;
+    #post-rating,
+    #post-tags {
+      margin-bottom: 20px;
+
+      a.ui:hover {
+        color: $backgroundColor !important;
+      }
+    }
+
+    .ui.tag.label::after {
+      background-color: $backgroundColor !important;
+    }
+
+    .ui.comments {
+      * {
+        color: $textColor;
+      }
+
+      .date {
+        color: $opaqueTextColor;
+      }
     }
   }
 

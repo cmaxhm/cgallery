@@ -22,5 +22,7 @@ return [
   'login-error' => 'Error de autenticación, por favor intenta de nuevo.',
   'donation-message' => 'Si quieres aportar a mantener esta web, puedes hacerlo aquí:',
   'most-voted-posts' => 'Posts más votados',
-  'posts-by' => 'Publicaciones de'
+  'posts-by' => 'Publicaciones de',
+  'search-results' => 'Resultados de búsqueda:',
+  'date' => 'Fecha:'
 ];
