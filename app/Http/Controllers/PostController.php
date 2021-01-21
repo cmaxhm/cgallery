@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller {
   public function show(Request $request) {
-    $postSlug = $request->slug;
-    $post = Post::with(['category', 'user', 'tags'])->where('slug', $postSlug)->firstOrFail();
+    $post = Post::where('slug', $request->slug)->firstOrFail();
     
     return view('public.post', [
       'post' =>  $post,
+      'comments' => $post->comments()->orderBy('created_at', 'desc')->paginate(20),
       'sidebars' => sidebars()
     ]);
   }

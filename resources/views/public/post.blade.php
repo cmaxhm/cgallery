@@ -63,7 +63,7 @@
               </div>
               <div class="ui divider"></div>
             @endauth
-            @forelse($post->comments()->orderBy('created_at', 'desc')->get() as $comment)
+            @forelse($comments as $comment)
               <div class="comment">
                 <a class="avatar">
                   <img src="{{ $comment->user()->first()->avatar }}">
@@ -82,6 +82,7 @@
               <p>{{ __('content.no-comments') }}</p>
             @endforelse
           </div>
+          {{ $comments->links('vendor.pagination.semantic-ui') }}
         </div>
       </div>
     </div>
