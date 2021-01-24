@@ -20,7 +20,7 @@
         <div id="post-meta">
           <h1 id="section-title">{{ $post->title }}</h1>
           <div id="post-author">
-            <a class="ui image label" href="{{ url('user/'.$post->user()->first()->username) }}"><img src="{{ $post->user()->first()->avatar }}"> {{ $post->user()->first()->username }}</a>
+            <a class="ui image label" href="{{ url('user/'.$post->user()->first()->username.'/posts') }}"><img src="{{ $post->user()->first()->avatar }}"> {{ $post->user()->first()->username }}</a>
             - {{ __('content.date') }} <span class="post-date">{{ date_format($post->created_at, 'd/m/Y') }}</span>
           </div>
           <div id="post-rating">
