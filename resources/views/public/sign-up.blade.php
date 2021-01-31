@@ -14,7 +14,7 @@
                 <i class="close icon"></i>
                 <div class="header">
                   @foreach ($errors->all() as $error)
-                    {{ __('content.login-error') }}
+                    {{ __('content.password-error') }}
                   @endforeach
                 </div>
               </div>

@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->date('birth_date');
             $table->string('avatar');
-            $table->integer('country');
+            $table->string('country');
             $table->integer('points');
             $table->boolean('is_admin');
             $table->boolean('is_banned');

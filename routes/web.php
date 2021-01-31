@@ -34,5 +34,5 @@ Route::post('/login/authenticate', [LoginController::class, 'authenticate'])->na
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/user/{username}/posts', [UserController::class, 'posts']);
 Route::get('/search', [SearchController::class, 'search']);
-Route::get('/sign-up', [SignUpController::class, 'show']);
+Route::get('/sign-up', [SignUpController::class, 'show'])->name('sign-up');
 Route::post('/sign-up/register-user', [SignUpController::class, 'register']);

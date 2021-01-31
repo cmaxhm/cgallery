@@ -17,7 +17,7 @@
       <div class="ui ordered vertical list">
         @foreach($sidebars->rightSidebar->usersRanking as $user)
           <div class="item">
-            <img class="ui avatar image" src="{{ $user->avatar }}">
+            <img class="ui avatar image" src="{{ env('APP_URL').$user->avatar }}">
             <div class="content">
               <div class="header">
                 <a href="{{ url('/users/'.$user->username) }}">{{ $user->username }}</a> <span>({{ $user->points }} {{ __('content.points') }})</span>

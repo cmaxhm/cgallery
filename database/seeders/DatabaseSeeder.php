@@ -17,8 +17,7 @@ class DatabaseSeeder extends Seeder {
    */
   public function run() {
     $this->call([
-      OptionsSeeder::class,
-      CountrySeeder::class
+      OptionsSeeder::class
     ]);
     
     Category::factory()->count(5)->create();

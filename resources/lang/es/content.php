@@ -30,5 +30,6 @@ return [
   'birthdate' => 'Fecha de nacimiento',
   'country' => 'Pais',
   'repeat-password' => 'Repetir contraseña',
-  'email' => 'Email'
+  'email' => 'Email',
+  'password-error' => 'Las contraseñas no coinciden, por favor intenta de nuevo',
 ];
