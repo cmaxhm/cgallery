@@ -7,6 +7,7 @@
 }
 
 form .ui.icon.input input,
+form .ui.search.dropdown,
 form.ui.form textarea {
   background: #4f4f4f;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
@@ -16,10 +17,20 @@ form.ui.form textarea {
 }
 
 form .ui.icon.input input:focus,
+form .ui.search.dropdown:focus,
 form.ui.form textarea:focus {
   background: #bababa;
   transition: background 0.3s ease;
   color: #2b2b2b !important;
+}
+
+form .menu.transition.visible {
+  background: #4f4f4f;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+form .ui.selection.dropdown .menu > .item {
+  border-top: none;
 }
 
 form i.icon {
@@ -28,6 +39,18 @@ form i.icon {
 
 #thin-wide-form {
   max-width: 300px;
+}
+
+#columns-form .field {
+  float: left;
+  clear: initial;
+  margin-right: 20px;
+}
+
+#columns-form .divider {
+  width: 100%;
+  height: 5px;
+  clear: both;
 }
 
 .ui.grid {

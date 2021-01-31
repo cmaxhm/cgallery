@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\SignUpController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\TagsController;
 use App\Http\Controllers\UserController;
@@ -33,3 +34,5 @@ Route::post('/login/authenticate', [LoginController::class, 'authenticate'])->na
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/user/{username}/posts', [UserController::class, 'posts']);
 Route::get('/search', [SearchController::class, 'search']);
+Route::get('/sign-up', [SignUpController::class, 'show']);
+Route::post('/sign-up/register-user', [SignUpController::class, 'register']);

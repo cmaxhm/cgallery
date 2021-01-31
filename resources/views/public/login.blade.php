@@ -21,18 +21,14 @@
             @endif
             <form id="thin-wide-form" class="ui form" action="{{ url('login/authenticate') }}" method="post">
               <div class="field">
-                <p>
-                  <label for="username">{{ __('content.username') }}</label>
-                </p>
+                <p><label for="username">{{ __('content.username') }}</label></p>
                 <div class="ui left icon input">
                   <input type="text" placeholder="{{ __('content.username') }}" name="username" value="{{ old('username') }}">
                   <i class="user icon"></i>
                 </div>
               </div>
               <div class="field">
-                <p>
-                  <label for="password">{{ __('content.password') }}</label>
-                </p>
+                <p><label for="password">{{ __('content.password') }}</label></p>
                 <div class="ui left icon input">
                   <input type="password" placeholder="{{ __('content.password') }}" name="password">
                   <i class="key icon"></i>
