@@ -34,6 +34,14 @@ class SignUpController extends Controller {
       return redirect()->to('sign-up')->withInput()->withErrors(__('content.sign-up-error'));
     }
     
+    if (User::where('username', $user->username)->exists()) {
+      return redirect()->to('sign-up')->withInput()->withErrors(__('content.username-in-use-error'));
+    }
+    
+    if (User::where('email', $user->email)->exists()) {
+      return redirect()->to('sign-up')->withInput()->withErrors(__('content.sign-up-error'));
+    }
+    
     if ($request->password == $request->repeatPassword) {
       $user->password = Hash::make($request->password);
       

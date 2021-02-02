@@ -32,5 +32,6 @@ return [
   'repeat-password' => 'Repetir contraseña',
   'email' => 'Email',
   'password-error' => 'Las contraseñas no coinciden, por favor intenta de nuevo',
-  'sign-up-error' => 'Por favor verifica el formulario e intentalo de nuevo'
+  'sign-up-error' => 'Por favor verifica el formulario e intentalo de nuevo',
+  'username-in-use-error' => 'Este nombre de usuario ya existe, por favor elige otro'
 ];
