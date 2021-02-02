@@ -14,7 +14,7 @@
                 <i class="close icon"></i>
                 <div class="header">
                   @foreach ($errors->all() as $error)
-                    {{ __('content.password-error') }}
+                    {{ $error }}
                   @endforeach
                 </div>
               </div>
@@ -28,7 +28,7 @@
                 </div>
               </div>
               <div class="field">
-                <p><label for="email">{{ __('content.email') }}</label></p>
+                <p><label for="email">{{ __('content.email') }}</label> *</p>
                 <div class="ui left icon input">
                   <input type="text" placeholder="{{ __('content.email') }}" name="email" value="{{ old('email') }}">
                   <i class="envelope icon"></i>

@@ -26,7 +26,15 @@ class SignUpController extends Controller {
     $user->is_admin = 0;
     $user->is_banned = 0;
     
-    if ($request->password == $request->repeatPassword && $request->password != '') {
+    if ($request->username == null ||
+      $request->birthdate == null ||
+      $request->email == null ||
+      $request->country == null ||
+      $request->password == null) {
+      return redirect()->to('sign-up')->withInput()->withErrors(__('content.sign-up-error'));
+    }
+    
+    if ($request->password == $request->repeatPassword) {
       $user->password = Hash::make($request->password);
       
       $user->save();
